@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Nicholas Carpentier">
+    <meta name="descprition" content="Week 1 Demo">
+
+
+    <title>W1 | Demo</title>
+
+</head>
+<style>body 
+{ background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F31%2F74%2FHhMqn0.jpg&f=1&nofb=1&ipt=fea8471c90bdb4473cf4065bd97d6e9d201c2fe44260f7ad99caf25f94bfeca3&ipo=images); }</style>
+<body>
+<!--The body holds ALL Content for the page-->
+<!--This is a comment in HTML-->
+
+<!-- heading tags are Block Level Elements (BLEs)-->
+ <!-- BLEs create structure for page - they are literal blocks rectangles start on a new left hand alined line-->
+
+
+<h1>Heading 1</h1> <!--ONE  h1 per page; content supports SEO-->
+<h2 style="border:1px solid red;">Heading 2</h2>
+<h3 style="border:1px solid blueviolet;">Heading 3</h3>
+<h4 style="border:1px solid pink;">Heading 4</h4>
+<h5 style="border:1px solid black;">Heading 5</h5>
+<h6 style="border:1px solid green;">Heading 6</h6>
+<!-- Horizontal rule - self-closing; spits out a BLE line-->
+ <hr>
+<!--Lists! we ordered (numbered) and unordered (bulleted)-->
+<!--Lists require: a type of list AND list items-->
+
+<h2>Favorite Dragons!</h2>
+<ol><!--Ordered list type-->
+    <li>dragon</li>
+    <li>Syrax</li>
+    <li>moondancer</li>
+</ol>
+
+<h2>Hobbies!</h2>
+<ul><!--Unordered Lists!-->
+    <li>Gaming</li>
+    <li>Motorcyle<br>Magic Missle!<br>Does this work?
+    </li>
+</ul>
+
+<hr>
+
+<h2>Paragraph Tags - for body text content</h2>
+<p>Hello everyone! This is a paragraph tag! Ima type some mumbo jumbo <br><br>| oiaoinsaoidfnasoidfnasoidfnasdofinasdfionasdfoinasdfioasdnfoiansdiofnasdf<br>asdoifnasdfoinasdfoinasdfoiasndfoiasdnfoiasnfasoidnfasf</p>
+
+
+<hr>
+
+<h2> Dics - divs (divisions/dividers) create sections of cotent; they ONLY hold *other HTML elements* (never text content on its own)</h2>
+
+<div style="border:1px solid grey; background-color: blue; font-family: Arial, Helvetica, sans-serif; color: magenta;">
+    <h4>About me!</h4>
+    <p>Hi my name is Nic! and I love getting <b><i><u>GAINS!</u></i></b></p>
+</div>
+<hr>
+
+  <!--Image tag are considered BOTH inline and block level XD-->
+  <!--we will primarily use them as BLEs-->
+
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F31%2F74%2FHhMqn0.jpg&f=1&nofb=1&ipt=fea8471c90bdb4473cf4065bd97d6e9d201c2fe44260f7ad99caf25f94bfeca3&ipo=images" alt="Deadpool L" width="500">
+
+  <!--above is an example of an SBSOLUTE image ath [booooooooo]-->
+<!--relative file paths are BEST! these live directly within root folder-->
+<img src="images/dumb.jpg" alt="When Naruto gets his first bayblade">
+<img src="images/L.jpg" alt="magic pot of greed">
+  <!--Img requires 2 attributes: 
+    *scr > file path to image
+    *alt > alterative text; what is read on screenreaders suports SEO, and appears if file path is broken-->
+
+    <hr>
+
+    <h2> hypertext Links</h2>
+
+    <p>Hypertext links give us access to <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZBTgA1l-auQ%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=8ae9bf9f78c9f69df8a3f164907c9d02eed5f718d060c7e6703c7e2953ea4496&ipo=images">other pages!</a> known as the <i>Anchor</i> tag.</p>
+</body>
+</html>
