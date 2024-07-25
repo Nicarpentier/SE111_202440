@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicholas Carpentier" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--in-document syling; loads in head so styles apply as the content loads-->
+    <!--Handle many selections of element styles as opposed t one at a time-->
+
+    <style>
+        /*in here we write CSS*/   
+        /*Selection in CSS & JS: select scepific element(s) on a page
+
+            *by Element type            ex: body, div, p
+            *by ID attribute            ex: #wrapper, #nav, #footer etc
+            *by CLASS attribute         ex: coming in week 3 :]
+
+        */
+        
+        div{
+            border:1px solid black;
+            padding:10px; /*adds space between content and border*/
+            margin:10px; /*adds space between an elements border and other elements*/
+
+
+            background-color: azure;
+        }
+
+        #wrapper {
+            background-color: black;
+            color: white    ;
+        }
+    </style>
+</head>
+<body style="background-color: grey;">
+
+    
+    <!-- all page content goes in the body-->
+
+    <!--WRAPPER: the wrapper literally "wraps" around all the content on the page-->
+    <div id="wrapper">
+
+        <h1 style="color: azure;">Nicholas Carpentier - <i>Nic or Niclaus</i></h1>
+        <!--navigation-->
+        <div id="nav">
+            <!--ID names can only be used one time per page-->
+
+            <!--Linkiing to OUTSIDE pages (not a part of the website) you need the full path protocol through ile extension (if not index.hmtml)-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a><br>
+
+            <!--linking to internal pages (part of sire) you just use a relative path-->
+            <a href="page2.html#footer">Page 2</a><br><br>
+
+            <!--IN-PAGE links: linking to sections within the actual page itself-->
+            <a href="#bio">Bio</a><br>
+            
+
+            <a href="#schools">Schools</a><br>
+            <a href="hobbies">Hobbies</a><br><br>
+            <a href="#footer">Bottom of Page</a><br>
+        </div><!--/ nav-->
+        <!-- Bio section-->
+        <div style="color: black" id="bio">
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he's afraid? That  the <i>only time</i> a man can be brave. A lightning bolt, on black field speckled with stars. Winter is coming. You know nothing, Jon Snow.</p>
+
+            <br> 
+
+            <!--Relaive img example-->
+            <img src="images/stormsEnd.jpg" alt="Light illustrations of stormsEnd in spring time" width="500">
+
+
+        </div><!--/ Bio-->
+         <!--Schools Section-->
+         <div style="color: black" id="schools">
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+            </ol>
+
+            <img src="../../" alt="a picture of the porteous bulding , main campus for MECA in Portland ME" width="500">
+         </div><!--/ Schools-->
+         <!--hobbies Section-->
+         <div style="color: black" id="hobbies">
+            <h2>My Hobbies</h2>
+            <ol>
+                <li>Hobby 1</li>
+                <li>Hobby 2</li>
+                <li>Hobby 3</li>
+
+            </ol>
+         </div><!-- / Hobbies-->
+         <!--Footer Section-->
+         <div style="color: black" id="footer">
+            
+            <a href="#wrapper">Back to top!</a><br>
+            <p>&copy; 2024 | Nic | SE111 [202440]</p>
+
+            <!---Validation image screeny below-->
+            <img src="images/imagevalid.png" alt="caidation screeny for THIS page" style="width:100%">
+         </div><!--/ Footer -->
+
+    </div><!--WRAPPER-->
+</body>
+</html>
