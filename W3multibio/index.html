@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainFrame Demo</title>
+    <meta name="author" content="Nicholas Carpentier" >
+    <meta name="description" content="W3D2 Mainframe Demo" >
+
+    <style>
+        /*in here write css*/
+        div {
+        /*All div elements on THIS page will take the following stylying*/
+            border:1px solid black;
+            padding:10px; /*adds space between eleement content and border*/
+            margin:10px; /*adds space between border of element and next element*/
+        }
+        #wrapper {
+            width:980;
+            margin:auto; /*Must have a width set; centers element w/ equal : & R space in range*/
+            background-color: darkgray;
+
+
+        }
+        #nav {
+            background-color: white;   
+        }
+
+        .bg {
+            background-color: black;
+            color: white;
+
+        }
+
+        .fancy {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="#header">MainFrame</h1>
+    <div id="wrapper">
+        <div id="header" class="bg">
+            <h1>W3 | Multi Page Demo</h1>
+        </div><!--header-->
+
+        <div id="nav">
+            <div id="buttons">
+                <a href="index.html">About</a>
+                <a href="schools.html">School</a>
+                <a href="hobbies.html">Hobbies</a>
+                
+            </div>
+
+        </div><!--nav-->
+<hr>
+        <div id="content">
+                <h2 class="fancy">This is the <b>About</b> page.</h2>
+
+                <p>Hello! My name is <i>Nicholas Carpentier</i>. I'm currently enrolled in the Cyber Security Network Engeneering pathway here at NEIT. I used to work for a tree company prior to enrolling. I was there for about a year until i got fed up with no raises and a lot of overtime. I have a CBR 600 that I ride occassionally which I currently have to get fixed before the next ride because of a hole inside of the engine. Heres an image! Also heres a link to my favorite music platform: <a href="https://music.youtube.com/" target="_blank">Youtube Music!</a><br> </p> <br>
+        
+            <img src="images/monti.jpg" alt="Colorful Monti on a bed" width="500">
+            
+        </div><!--content-->
+<hr>
+        <div id="footer" class="bg">
+            <p class="fancy">&copy; N Carpentier | SE111 | 202440</p>
+
+            <!--Make sure to include Validation Screeny-->
+
+        </div><!--footer-->
+            <a href="#header">Jump To Top</a><br>
+    </div><!--wrapper-->
+    
+</body>
+</html>
