@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Pay Calc</title>
+    <meta name="author" content="Nicholas Carpentier">
+    <meta name="description" content="W6 | JS Pay Calc">
+</head>
+<body>
+    
+    <script>
+        var hoursw = Number(prompt('Please enter hours worked in two week period.'))
+        var wage = Number(prompt('Please enter your wage'))
+        var tax = .2
+
+        var gross = hoursw * wage
+        var unclesam = gross * tax
+        var netp = gross - unclesam
+        
+
+        //console.log()
+        console.log(gross)
+        console.log(hoursw, wage, gross)
+        console.log(`Gross pay: $${gross.toFixed(2)}`)
+        console.log(`Uncle Sam's Share: $${unclesam.toFixed(2)}`)
+        console.log(`Net pay:   $${netp.toFixed(2)}`)
+
+        //alert() allow for a pop-up in the browser page to dispay data
+        alert(`The gross pay is $"${gross.toFixed(2)}\nThe Tax amount is $${unclesam.toFixed(2)}\nThe Net pay is $${netp.toFixed(2)}`)
+
+        console.log(`alert complete.`)
+    </script>
+</body>
+</html>
